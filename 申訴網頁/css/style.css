@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500;1,700&display=swap');
+/*
+ * Page name
+ * Copyright 2021
+ * Author
+ * Licensed
+ */
+/* -------------------------- *\
+	Content
+\* -------------------------- */
+/**
+ * Content ............ You are reading it!
+ * Globel ............ Set common styles
+ * Layout ............ Set grid styles
+ * Component ............ Set component styles
+ */
+
+/* -------------------------- *\
+	Globel
+\* -------------------------- */
+
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+html,body{
+	font-family: 'M PLUS Rounded 1c',  Fangsong, sans-serif;
+	width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+.title{
+    font-size: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	color: #3DC5A4;
+	text-align: left;
+}
+
+.subtitle{
+    font-size: 25px;
+	line-height: 50px;
+	font-weight: bold;
+	color: #4f4f4f;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+/* .bg-gate{
+	background-image: url('/yvonnepan0911.github.io/申訴網頁/image/校門.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+} */
+
+.wrapper{
+	background-color: #f0f0f0;
+	height: 100%;
+}
+
+.bg{
+	background-color: #f0f0f0;
+	height: 100%;
+}
