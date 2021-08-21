@@ -46,8 +46,6 @@ a{
 .col-sm-6,.col-sm-4,.col-sm-3,.col-sm-12{
 	/* border: 1px solid red; */
 	display: inline-block;
-	padding-left: 16px;
-	padding-right: 16px;
 	vertical-align: top;
 }
 .col-lg-3{
@@ -300,15 +298,31 @@ a{
 }
 
 .row{
+	padding: 0 40px;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 540px) {
+	.row{
+		padding: 0 10px;
+	}
+}
+
+.row-block--mt20{
+	margin-top: 20px;
+	display: block;
+	width: 100%;
+	margin-top: 20px;
 	padding: 0 20px;
 }
 
-.row-block--pad10{
+.row-block--pad0{
 	display: block;
-	/* border: 1px solid #000; */
 	width: 100%;
 	margin-top: 20px;
-	padding: 0 10px;
+	padding: 0;
 }
 
 @media screen and (max-width: 540px) {
@@ -322,7 +336,7 @@ a{
 	/* border: 1px solid #000; */
 	width: 100%;
 	margin-top: 60px;
-	padding: 0 40px;
+	padding: 0 20px;
 }
 
 .row-block .item{
@@ -345,8 +359,6 @@ a{
 	color: #3DC5A4;
 	text-align: center;
 	padding-bottom: 10px;
-	padding-right: 30px;
-	padding-left: 30px;
 }
 
 @media screen and (max-width: 540px) {
@@ -469,12 +481,13 @@ a{
 	color: #3DC5A4;
 }
 @media screen and (max-width: 540px) {
-	.btn.btn.btn-secondary{
+	.btn.btn-secondary{
 		font-size: 14px;
 		margin-right: 0px;
 		margin-left: 0px;
 		margin-top: 4px;
 		padding: 2px 2px;
+		margin-bottom: 20px;
 		border-radius: 10px;
 	}
 }
@@ -512,6 +525,13 @@ a{
 	font-size: 40px;
 	color: #000;
 	padding-top: 40px;
+	text-align: center;
+}
+
+.section-intro-small .title--fresh{
+	font-size: 20px;
+	color: #fff;
+	padding: 20px 0;
 	text-align: center;
 }
 
@@ -667,14 +687,6 @@ a{
 	color: #4f4f4f;
 }
 
-/* @media screen and (max-width: 540px) {
-	.contact-info .info-item .title span{
-		font-size: 22px;
-	}
-	.contact-info .info-item .info{
-		font-size: 18px;
-	} */
-
 .col-lg-6 .map-container-1, .map-container-2{
 	display:inline-block;
 	height: 75%;
@@ -698,7 +710,6 @@ a{
 /* item 各類col內容物 */
 .item{
 	display: inline-block;
-	height: 200px;
 }
 
 .item .title{
@@ -731,6 +742,12 @@ a{
 	margin-bottom: 8px;
 }
 
+@media screen and (max-width: 540px){
+	.item .title--fresh{
+		font-size: 16px;
+	}
+}
+
 .item .para{
 	font-size: 14px;
 	text-align: center;
@@ -756,12 +773,17 @@ a{
 }
 
 .item .para--fresh{
-	font-size: 14px;
+	font-size: 16px;
 	text-align: center;
 	color: #F0F0F0;
 	line-height: 24px;
-	margin-bottom: 6px;
+	margin-bottom: 40px;
 	text-align: justify;
+	margin-left: 10px;
+}
+
+.post{
+	padding: 0 20px;
 }
 
 /* footer */
